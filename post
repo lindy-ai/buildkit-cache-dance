@@ -8,7 +8,7 @@ read_action_input() {
 cache_hit=$(read_action_input "cache-hit")
 if [[ "$cache_hit" != "false" ]]; then
     echo "Cache hit is not false. Exiting."
-    exit 1
+    exit 0
 fi
 : "Prepare Timestamp for Layer Cache Busting"
 date --iso=ns | tee "$(read_action_input scratch-dir)"/buildstamp
