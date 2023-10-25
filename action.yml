@@ -10,6 +10,9 @@ inputs:
   scratch-dir:
     default: scratch
     description: "Where the action is stores some temporary files for its processing. Default: `scratch`"
+  cache-hit:
+    default: false
+    description: "If the cache does not need to be re-saved, because you had a cache hit. Default: `false`"
 runs:
   using: 'node20'
   main: 'entrypoint.js'
