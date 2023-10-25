@@ -17,3 +17,4 @@ runs:
   using: 'node20'
   main: 'entrypoint.js'
   post: 'entrypoint.js'
+  post-if: 'success()'
